@@ -1,0 +1,10 @@
+enum FieldEnum {
+  NAME,
+  EMAIL,
+  PASSWORD,
+  PHONE,
+  COUNTRY,
+  CARD_NUMBER,
+  EXP_DATE,
+  CVV
+}

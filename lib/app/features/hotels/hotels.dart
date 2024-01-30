@@ -1,0 +1,42 @@
+library hotels;
+
+import 'dart:async';
+
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:collection/collection.dart';
+import 'package:dotted_line/dotted_line.dart';
+import 'package:equatable/equatable.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:my_project/app/common/enums/hotel_sort_type.dart';
+import 'package:my_project/app/common/enums/property_type.dart';
+import 'package:my_project/app/common/widgets/filter_option.dart';
+import 'package:my_project/app/common/widgets/my_confirm_dialog.dart';
+import 'package:my_project/app/common/widgets/my_primary_button.dart';
+import 'package:my_project/app/common/widgets/my_secondary_button.dart';
+import 'package:my_project/app/common/widgets/my_skeleton_rectangle.dart';
+import 'package:my_project/app/common/widgets/property_item.dart';
+import 'package:my_project/app/common/widgets/sort_item.dart';
+import 'package:my_project/app/config/app_color.dart';
+import 'package:my_project/app/config/app_dimen.dart';
+import 'package:my_project/app/config/app_path.dart';
+import 'package:my_project/app/config/app_style.dart';
+import 'package:my_project/app/features/hotel_detail/hotel_detail.dart';
+import 'package:my_project/app/features/hotel_search/hotel_search.dart';
+import 'package:my_project/app/utils/string_format_util.dart';
+import 'package:my_project/data/model/hotel_model.dart';
+import 'package:my_project/data/repositories/hotel/hotel_repository.dart';
+import 'package:my_project/data/services/shared_service.dart';
+import 'package:shimmer/shimmer.dart';
+
+part 'bloc/hotels_bloc.dart';
+part 'bloc/hotels_event.dart';
+part 'bloc/hotels_state.dart';
+part 'page/hotels_page.dart';
+part 'widgets/hotel_filter_bottom_sheet.dart';
+part 'widgets/hotel_item.dart';
+part 'widgets/hotels_header.dart';

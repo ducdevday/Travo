@@ -1,0 +1,13 @@
+part of 'otp_bloc.dart';
+
+@immutable
+abstract class OtpState {}
+
+class OtpInitial extends OtpState {}
+
+class OtpVerifyLoading extends OtpState {}
+
+class OtpVerifySuccess extends OtpState{}
+
+class OtpVerifyFail extends OtpState{}
+

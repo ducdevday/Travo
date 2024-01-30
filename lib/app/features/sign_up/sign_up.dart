@@ -1,0 +1,33 @@
+library sign_up;
+
+import 'package:equatable/equatable.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fl_country_code_picker/fl_country_code_picker.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:my_project/app/common/enums/field_enum.dart';
+import 'package:my_project/app/common/widgets/country_input_field.dart';
+import 'package:my_project/app/common/widgets/default_input_field.dart';
+import 'package:my_project/app/common/widgets/my_primary_button.dart';
+import 'package:my_project/app/common/widgets/phone_input_field.dart';
+import 'package:my_project/app/config/app_color.dart';
+import 'package:my_project/app/config/app_dimen.dart';
+import 'package:my_project/app/config/app_path.dart';
+import 'package:my_project/app/config/app_style.dart';
+import 'package:my_project/app/features/default/bloc/user_cubit.dart';
+import 'package:my_project/app/features/default/page/default_page.dart';
+import 'package:my_project/app/features/default/widgets/bottombar/my_bottom_nav_bar_cubit.dart';
+import 'package:my_project/app/features/home/home.dart';
+import 'package:my_project/app/utils/validate_field_util.dart';
+import 'package:my_project/data/repositories/auth/auth_repository.dart';
+
+part 'cubit/sign_up_cubit.dart';
+part 'cubit/sign_up_state.dart';
+part 'page/sign_up_page.dart';
+part 'widgets/auth_header.dart';
+part 'widgets/divider_text.dart';
+part 'widgets/policy_text.dart';
+part 'widgets/social_widget.dart';
