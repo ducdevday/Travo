@@ -1,16 +1,11 @@
-# my_project
+# Travo
 
-A new Flutter project.
+A Booking Hotel And Flight App For Traveler.
 
-## Getting Started
+## Promotion Video
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Demo Video
+https://drive.google.com/drive/folders/1vKwdkywhn_ltO9Ss09RJKfluhHgA66wM
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
